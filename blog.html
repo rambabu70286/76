@@ -1,0 +1,503 @@
+<html>
+<head>
+    <title></title>
+         <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        nav{
+            text-decoration: none;
+        }
+        .navbar-inverse{
+           background-color:black;
+            padding-right: 10px;
+            padding-left: 10px;
+            position: fixed;
+            top:0;
+        }
+        .navbar-brand{
+            font-size: 30px;
+            font-weight: 600;
+            font-family: Times New Roman;
+            margin-right: 80px;
+            margin-left:10px;
+            text-align: center;
+            text-decoration: none;
+        }
+       ul li{
+            list-style: none; display: inline-block;
+        }
+        li a{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+        button{
+            background-color: white;
+            margin-left: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+            text-align: center
+        }
+        button a{
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+            
+        }
+        ul li img{
+            font-size: 30px;
+            background-color: black;
+        }
+        .header{
+            align-items: center;
+            background-color: red;
+            width:100%;
+            height:45px;
+        }
+        .search-items{
+            display: flex;
+            align-content: center;
+        }
+        .search-button{
+          padding:8px 15px;
+            font-size: 20px;
+            background-color: #007BFF; 
+            color: #fff;
+             border: none;
+            cursor: pointer;
+        }
+        .search-item{
+            margin-right: 10px;
+      font-size: 20px;
+           
+        
+        }
+        .search-textbox{
+            padding: 8px;
+           font-size: 16px;
+        }
+        #location{
+            margin-top: 40px;
+            background-color: black;
+            padding: 1px;
+        }
+        .menu li a{
+            line-height: 2;
+           font-size: 15px;
+          text-decoration: none;
+            float: left;
+        }
+        .info h3{
+            color: white;
+            font-weight: bold;
+           
+        }
+        .fotter{
+           display: flex;
+           justify-content: space-between;
+            width: 100%;
+        
+        }
+              
+        .menu{
+            list-style: none;
+            padding:2px;
+            float: left;
+        }
+        .banner img{
+            margin-left: 20px;
+           margin: 10px;
+            height: 100px;
+                width: 25%;
+        }
+        form{
+            margin-top: 2em;
+        }        
+        select {
+            
+            margin-right: 20px;
+            width: 180px;
+            height:30px;       
+            margin-left: 10px;
+            margin-right: 20px;
+            
+        }
+        label{
+            display: inline-block;
+            margin-right: 10px;
+            width: 100px;
+            text-align: right;
+            padding:10px;
+            
+            
+        }
+        input{
+            padding: 5px;
+            margin-right: 10px;
+            width: 200px;
+           
+        }
+        :root{
+	--main: #7b4ee4 ;
+	--darkblue: #362078;
+	--black: #060606;
+	--white: #e7dff4;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: system-ui;
+}
+.clearfix{
+	clear: both;
+}
+header{
+	padding: 20px 0px;
+	box-shadow: 2px 2px 15px var(--black);
+}
+.container{
+	width: 1140px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.col-div-6{
+	width: 50%;
+	float: left;
+}
+
+
+.banner-section{
+	background: var(--main);
+	height: 400px;
+	overflow: hidden;
+}
+.heading{
+	color: var(--white);
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-top: 14%;
+}
+.p1{
+	color: white;
+    width: 395px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.input-box{
+	box-shadow: 1px 7px 8px 0px #222121;
+    width: 360px;
+    border-radius: 50%;
+}
+.input-box input[type="text"]{
+	padding: 9px;
+    width: 265px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.input-box button{
+	padding: 10px 27px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    margin-left: -6px;
+    background: var(--darkblue);
+    color: white;
+    cursor: pointer;
+}
+.ban-img{
+	width: 250px;
+	margin-bottom:-50px;
+
+}
+.b-img{
+	width: 100%;
+	border-radius: 10px;
+}
+.heading1{
+	margin-top: 20px;
+	color: var(--main);
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.blog-heading{
+	font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+.text{
+	font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+.name{
+	text-transform: uppercase;
+    font-weight: 600;
+    color: #a1a1a1;
+    font-size: 14px;
+}
+.lr-box{
+	padding: 10px 20px;
+
+}
+.b-img-1{
+	width: 100%;
+	height: 160px;
+	border-radius: 10px;
+	margin-top: 7px;
+}
+.blog-heading-1{
+	font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+.line{
+	    width: 100%;
+	    margin-top: 15px;
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+.lr-box:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+.box-1:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.box-2{
+	width: 28.5%;
+	float: left;
+	margin: 25px;
+}
+.box-2:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+.foot-section{
+	background: var(--main);
+}
+.foot-inner{
+	width: 500px;
+	margin: 0 auto;
+	padding: 50px;
+	text-align: center;
+}
+.ibox2{
+	margin: 0 auto;
+	width: 380px;
+}
+footer{
+	background:var(--darkblue);
+	padding: 15px;
+}
+footer p{
+	color: var(--white);
+	text-align: center;
+}
+        h2{
+            background-color: goldenrod;
+            border-radius: 50px;
+            margin-left:300px;
+            margin-right: 300px;
+        }
+   
+ </style></head>
+       
+    <body>
+     <nav class="navbar-inverse" style="position: sticky;top:0; z-index: 1000px">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food Items</a>
+            </div>
+            <div class="navbar-collapse collapse" id="mynavbar" aria-expanded="false" style="height: 0.8px;">
+                <ul class="nav navbar-nav">
+                <li><a href="#home"> Home</a></li>
+                 <li><a href="about.html"> About</a></li>
+                <li><a href="biryanis.html"> Biryanis</a></li>
+                  <li><a href="startes.html"> Startes</a></li>
+                     <li><a href="soups.html"> Soups</a></li>
+                 <li><a href="blog.html">Blog </a></li>
+                    <li><a href="registration.html">Registration </a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                <li><a href=" add cart.html">Add Cart<img src="aaaaaa.png" height="22px" width="22px;"></a></li>
+                <button><a href="login.html">Login</a></button>
+                <button><a href="sign.html">Sign up</a></button>
+                   
+                </ul></div>
+         </nav>
+    <div class="header">
+        <center>
+        <div class="search-item">
+           <input class="search-textbox" type="text" placeholder="search items">
+           <button class="search-button">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+            </div>
+            </center>
+    </div>
+        <center><h2>Highlights Of Restaurant</h2></center>
+        <div class="container">
+		<br><br>
+		<div class="col-div-6">
+				<div class="box-1">
+				<img src="ram.jpg" class="b-img">
+				<h3 class="heading1">Travel</h3>
+				<p class="blog-heading">Beautiful Location For Travel</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the Beautiful Location For Travel</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+			</div>
+		<div class="col-div-6">
+			<div class="lr-box">
+			<div class="col-div-6">
+				<h3 class="heading1">Food</h3>
+				<p class="blog-heading-1">Good Food Good Health</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+			</div>
+			<div class="col-div-6">
+				<img src="ro.jpg" class="b-img-1">
+			</div>
+			<div class="clearfix"></div>
+			<hr class="line">
+			</div>
+
+
+			<div class="lr-box">
+			<div class="col-div-6">
+				<h3 class="heading1">Technology</h3>
+				<p class="blog-heading-1">Looking for tech blogs</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+			</div>
+			<div class="col-div-6">
+				<img src="nt.jpeg" class="b-img-1">
+			</div>
+			<div class="clearfix"></div>
+			<hr class="line">
+			</div>
+
+			<div class="lr-box">
+			<div class="col-div-6">
+				<h3 class="heading1">Food</h3>
+				<p class="blog-heading-1">Good Food Good Health</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+			</div>
+			<div class="col-div-6">
+				<img src="13.jpeg" class="b-img-1">
+			</div>
+			<div class="clearfix"></div>
+			<hr class="line">
+			</div>
+
+		</div>
+
+		<div class="clearfix"></div>
+        </div>
+
+<br><br>
+
+
+<section>
+	<div class="container" style="text-align:center;">
+		<h3>Latest stories</h3>
+		<br>
+		
+		<div class="box-2">
+			<img src="rt.jpeg" class="b-img-1">
+			<h3 class="heading1">Entertainment</h3>
+				<p class="blog-heading-1">Entertainment good for health</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+		<div class="box-2">
+			<img src="tr.jpeg" class="b-img-1">
+			<h3 class="heading1">Animals</h3>
+				<p class="blog-heading-1">Good Food Good Health</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+		<div class="box-2">
+			<img src="download.jpeg" class="b-img-1">
+			<h3 class="heading1">Photograpy</h3>
+				<p class="blog-heading-1">Good Food Good Health</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+		
+		<div class="clearfix"></div>
+
+		<div class="box-2">
+			<img src="rt.jpeg" class="b-img-1">
+			<h3 class="heading1">Fun</h3>
+				<p class="blog-heading-1">Good Food Good Health</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+		<div class="box-2">
+			<img src="tr.jpeg" class="b-img-1">
+			<h3 class="heading1">Food</h3>
+				<p class="blog-heading-1">Good Food Good Health</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+		<div class="box-2">
+			<img src="1111.jpg" class="b-img-1">
+			<h3 class="heading1">Food</h3>
+				<p class="blog-heading-1">Good Food Good Health</p>
+				<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+				<span class="name">Manoj Singh . SEP 21, 2021</span>
+		</div>
+
+		<div class="clearfix"></div>
+	</div>
+</section>
+
+
+<section class="foot-section">
+	<div class="container">
+		<div class="foot-inner">
+		<h1 class="heading" style="margin: 0px;">Get our weekly email</h1>
+			<p class="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the </p>
+			<div class="input-box ibox2"><input type="text" placeholder="Enter Your Email"><button>Sign up</button></div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<p>Copyright@ M-SoftTech</p>
+	</div>
+</footer>
+    
+    </body>
+
+
+</html>

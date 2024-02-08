@@ -1,0 +1,276 @@
+<html>
+<head>
+    <title></title>
+         <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        nav{
+            text-decoration: none;
+        }
+        .navbar-inverse{
+           background-color:black;
+            padding-right: 10px;
+            padding-left: 10px;
+            position: fixed;
+            top:0;
+        }
+        .navbar-brand{
+            font-size: 30px;
+            font-weight: 600;
+            font-family: Times New Roman;
+            margin-right: 80px;
+            margin-left:10px;
+            text-align: center;
+            text-decoration: none;
+        }
+       ul li{
+            list-style: none; display: inline-block;
+        }
+        li a{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+        button{
+            background-color: white;
+            margin-left: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+            text-align: center
+        }
+        button a{
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+            
+        }
+        ul li img{
+            font-size: 30px;
+            background-color: black;
+        }
+        .header{
+            align-items: center;
+            background-color: red;
+            width:100%;
+            height:45px;
+        }
+        .search-items{
+            display: flex;
+            align-content: center;
+        }
+        .search-button{
+          padding:8px 15px;
+            font-size: 20px;
+            background-color: #007BFF; 
+            color: #fff;
+             border: none;
+            cursor: pointer;
+        }
+        .search-item{
+            margin-right: 10px;
+      font-size: 20px;
+           
+        
+        }
+        .search-textbox{
+            padding: 8px;
+           font-size: 16px;
+        }
+        #location{
+            margin-top: 40px;
+            background-color: black;
+            padding: 1px;
+        }
+        .menu li a{
+            line-height: 2;
+           font-size: 15px;
+          text-decoration: none;
+            float: left;
+        }
+        .info h3{
+            color: white;
+            font-weight: bold;
+           
+        }
+        .fotter{
+           display: flex;
+           justify-content: space-between;
+            width: 100%;
+        
+        }
+              
+        .menu{
+            list-style: none;
+            padding:2px;
+            float: left;
+        }
+        .banner img{
+            margin-left: 20px;
+           margin: 10px;
+            height: 100px;
+                width: 25%;
+        }
+        form{
+            margin-top: 2em;
+        }        
+        select {
+            
+            margin-right: 20px;
+            width: 180px;
+            height:30px;       
+            margin-left: 10px;
+            margin-right: 20px;
+            
+        }
+        label{
+            display: inline-block;
+            margin-right: 10px;
+            width: 100px;
+            text-align: right;
+            padding:10px;
+            
+            
+        }
+        input{
+            padding: 5px;
+            margin-right: 10px;
+            width: 200px;
+           
+        }
+        #location{
+            margin-top: ;
+            background-color: black;
+            padding: 1px;
+        }
+        .menu li a{
+            line-height: 2;
+           font-size: 15px;
+          text-decoration: none;
+            float: left;
+        }
+        .info h3{
+            color: white;
+            font-weight: bold;
+           
+        }
+        .fotter{
+           display: flex;
+           justify-content: space-between;
+            width: 100%;
+        
+        }
+              
+        .menu{
+            list-style: none;
+            padding:2px;
+            float: left;
+        }
+       
+   
+ </style></head>
+       
+    <body>
+     <nav class="navbar-inverse" style="position: sticky;top:0; z-index: 1000px">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food Items</a>
+            </div>
+            <div class="navbar-collapse collapse" id="mynavbar" aria-expanded="false" style="height: 0.8px;">
+                <ul class="nav navbar-nav">
+                <li><a href="#home"> Home</a></li>
+                 <li><a href="about.html"> About</a></li>
+                <li><a href="biryanis.html"> Biryanis</a></li>
+                  <li><a href="startes.html"> Startes</a></li>
+                     <li><a href="soups.html"> Soups</a></li>
+                 <li><a href="blog.html">Blog </a></li>
+                    <li><a href="registration.html">Registration </a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                <li><a href=" add cart.html">Add Cart<img src="aaaaaa.png" height="22px" width="22px;"></a></li>
+                <button><a href="login.html">Login</a></button>
+                <button><a href="sign up.html">Sign up</a></button>
+                   
+                </ul></div>
+         </nav>
+    <div class="header">
+        <center>
+        <div class="search-item">
+           <input class="search-textbox" type="text" placeholder="search items">
+           <button class="search-button">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+            </div>
+            </center>
+    </div>
+        <section id="cart">
+        <center>
+            <div class="car" style="background-color: darkolivegreen;">
+                <img src="su.avif" style="width: 300px"><br>
+                 <button type="button" style="width: 140px; background-color: black; color: white;margin-bottom: 5px;">Place to order</button>
+                    <button type="button" style="width: 140px; background-color: black; color: white; margin-bottom: 5px;">Remove from cart</button>
+            </div>
+        </center>
+    </section>
+   
+    
+   
+    <div id="location">
+        <div class="container">
+        <div class="fotter">
+            <div class="info">
+            <h3 class="heading">Account details</h3>
+                <ul class="menu">
+                <li><a href="#">Home</a></li><br>
+                 <li><a href="#">About</a></li><br>
+                 <li><a href="#">Search</a></li><br>
+                 <li><a href="#">Cart</a></li><br>
+                 <li><a href="#">Checkout</a></li><br>
+                </ul>
+            </div>
+            <div class="info">
+                <h3 class="heading">Account details</h3>
+            <ul class="menu">
+                 <li><a href="#">My Profile</a></li><br>
+                 <li><a href="#">Change Password</a></li><br>
+                 <li><a href="#">orders</a></li><br>
+                 <li><a href="#">Cart items</a></li><br>
+                 <li><a href="#">Cashback</a></li><br>
+                </ul>
+            </div>
+            <div class="info">
+            <h3 class="heading">Quick link</h3>
+                <ul class="menu">
+                 <li><a href="#">login</a></li><br>
+                 <li><a href="#">Faq</a></li><br>
+                 <li><a href="#">Contact us</a></li><br>
+                 <li><a href="#">Download App</a></li><br>
+                 <li><a href="#">Refer &amp; Earn</a></li><br></ul>
+            </div>
+            <div class="info">
+            <h3 class="heading">GET IN TOUCH</h3>
+                <ul class="get-in-touch">
+                     <li><a href="#">Email:foodcourt@gamil.com</a></li><br>
+                     <li><a href="#">Mobile:9959392989</a></li><br>
+                     <li><a href="#">Website:www.foodcourt.com</a></li>
+                </ul>
+                <ul class="social-media">
+                    <li><a href="#" class="fa fa-whatsapp"></a></li>
+                     <li><a href="#" class="fa fa-facebook"></a></li>
+                     <li><a href="#" class="fa fa-twitter"></a></li>
+                </ul>
+            </div>
+            </div>
+    </div></div>
+    
+    </body>
+</html>

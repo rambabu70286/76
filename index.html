@@ -1,0 +1,330 @@
+<html>
+<head>
+    <title></title>
+         <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color:papayawhip;
+        }
+        nav{
+            text-decoration: none;
+        }
+        .navbar-inverse{
+           background-color:black;
+            padding-right: 10px;
+            padding-left: 10px;
+            position: fixed;
+            top:0;
+        }
+        .navbar-brand{
+            font-size: 30px;
+            font-weight: 600;
+            font-family: Times New Roman;
+            margin-right: 80px;
+            margin-left:10px;
+            text-align: center;
+            text-decoration: none;
+        }
+       ul li{
+            list-style: none; display: inline-block;
+        }
+        li a{
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+        button{
+            background-color: white;
+            margin-left: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+            text-align: center
+        }
+        button a{
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+            
+        }
+        ul li img{
+            font-size: 30px;
+            background-color: black;
+        }
+        .header{
+            align-items: center;
+            background-color: red;
+            width:100%;
+            height:45px;
+        }
+        @import url(
+'https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap');
+
+
+
+.section-intro {
+	height: 820px;
+	background-image: url(img/foddiee.png);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-intro h1 {
+	text-align: center;
+	color: #000;
+	font-size: 4em;
+	font-weight: 700;
+}
+
+.section-intro header {
+	display: flex;
+	flex: 4;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.link-to-book-wrapper {
+	flex: 1;
+}
+
+.about-section {
+	display: flex;
+	align-items: center;
+	background-color: #f3f3f3c0;
+	padding: 50px 30px;
+}
+
+.link-to-book {
+	color: #ffffff;
+	display: block;
+	border: 2px solid #ffffff;
+	padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+	background-color: #ffffff;
+	color: #95999e;
+	text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	font-family: 'Big Shoulders Text', cursive;
+	font-size: 1.8em;
+	text-transform: uppercase;
+}
+
+.carousel-inner {
+	height: 700px;
+}
+
+.row-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column-form {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 30px 20px;
+}
+
+.btn.btn-primary {
+	font-family: 'Big Shoulders Text', cursive;
+	color: #ffffff;
+	background-color: #95999e;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+	border: 0;
+}
+
+.btn.btn-primary:hover {
+	background-color: #747474;
+}
+
+.opening-time,
+.contact-address {
+	flex: 1;
+	margin: 30px 20px;
+	font-size: 1.2em;
+}
+
+.form-group p {
+	font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-address p span {
+	display: block;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+	.section-intro {
+		height: 500px;
+	}
+
+	.about-section p,
+	.about-section h3 {
+		font-size: 20px;
+	}
+
+	.carousel-inner {
+		height: auto;
+	}
+
+	.row-flex {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.section-intro {
+		height: 300px;
+	}
+
+	.about-section {
+		padding: 30px;
+	}
+
+	.section-intro h1 {
+		font-size: 2em;
+	}
+
+	.about-section p,
+	.about-section h3 {
+		font-size: 15px;
+	}
+
+	.carousel-inner {
+		height: auto;
+	}
+
+	.row-flex {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.row-flex h3 {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.form-group p {
+		font-size: 15px;
+	}
+
+	.opening-time p span,
+	.contact-address p span {
+		font-size: 15px;
+		text-align: center;
+	}
+
+}
+
+.carousel-item img {
+	background-repeat: no-repeat;
+	background-size: cover;
+        }
+        
+        
+    
+        
+   
+   
+ </style></head>
+       
+    <body>
+     <nav class="navbar-inverse" style="position: sticky;top:0; z-index: 1000px">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food Items</a>
+            </div>
+            <div class="navbar-collapse collapse" id="mynavbar" aria-expanded="false" style="height: 0.8px;">
+                <ul class="nav navbar-nav">
+                <li><a href="#home"> Home</a></li>
+                 <li><a href="about.html"> About</a></li>
+                 <li><a href="biryanis.html"> Biryanis</a></li>
+                  <li><a href="startes.html"> Startes</a></li>
+                     <li><a href="soups.html"> Soups</a></li>
+                 <li><a href="blog.html">Blog </a></li>
+                    <li><a href="registration.html">Registration </a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                <li><a href=" add cart.html">Add Cart<img src="aaaaaa.png" height="22px" width="22px;"></a></li>
+                <button><a href="login.html">Login</a></button>
+                <button><a href="sign up.html">Sign up</a></button>
+                   
+                </ul></div>
+         </nav>
+    <div class="header">
+        <center>
+        <div class="search-item">
+           <input class="search-textbox" type="text" placeholder="search items">
+           <button class="search-button">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+            </div>
+            </center>
+    </div>
+          <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 text-white">
+              Welcome To Fooddddie's Kitchen
+              </h1>
+            <p class="lead text-white">
+              Explore a world of flavors and 
+              indulge in culinary delights.
+              </p>
+            <a class="btn btn-primary btn-lg" href="#reservations">
+              Book a table
+              </a>
+        </div>
+    </section>
+        <center>
+            <img class="img1" src="welcome-home-house-decoration-atmosphere-coverage.jpg" style="width: 500px" height="400px"></center>
+            <section id="home" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-heading">
+                      Why Choose Us?
+                      </h2>
+                    <p class="text-muted">
+                        Discover the extraordinary at Fooddddie's Kitchen. 
+                          Our commitment to quality and
+                        exceptional service makes us your top choice. 
+                          Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img1" src="pexels-chan-walrus-958545.jpg" style="width: 500px" height="500px" >
+                       
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
